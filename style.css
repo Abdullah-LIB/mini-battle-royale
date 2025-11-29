@@ -1,0 +1,38 @@
+/* style.css - simple full-screen canvas */
+html,body {
+  margin:0;
+  height:100%;
+  background:#111;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+#game {
+  display:block;
+  background: linear-gradient(180deg,#0b1220,#07101a);
+  width:100vw;
+  height:100vh;
+  touch-action:none;
+}
+#ui {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  right:8px;
+  display:flex;
+  justify-content:space-between;
+  pointer-events:none;
+  color: #fff;
+  font-weight:700;
+  z-index:10;
+}
+#restart {
+  position: fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:20px;
+  padding:10px 18px;
+  font-size:16px;
+  pointer-events:auto;
+}
